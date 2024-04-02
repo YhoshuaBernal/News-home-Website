@@ -1,0 +1,31 @@
+@use "../Settings/variables" as *;
+@use "../Settings/breakpoints" as break;
+@use "../Tools/mixins" as *;
+
+.main__articles {
+  @include displayFlex(center, start);
+  padding: 18px;
+  background-color: $Very-dark-blue;
+  margin: 24px 0;
+  .articles__title {
+    color: $Soft-orange;
+  }
+  .articles__new {
+    width: 100%;
+    .articles__new-title {
+      color: $Off-white;
+      &:hover {
+        color: $Soft-orange;
+      }
+    }
+    .articles__new-parragraph { 
+      color: $Grayish-blue;
+    }
+  }
+}
+
+@include break.screen-size-md {
+  .main__articles {
+    margin: 0px;
+  }
+}

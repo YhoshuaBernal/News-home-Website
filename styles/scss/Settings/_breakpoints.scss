@@ -1,0 +1,42 @@
+$breakPoints: (
+  xs: 0px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+/* @content significa que se va tomar los valores que establescamos cuando usemos el mixin*/
+/* map-get permite que podamos usar las variables que creamos en nuestro mapa */
+@mixin screen-size-xs () {
+  @media (min-width: map-get($breakPoints, "xs")) {
+    @content;
+  }
+}
+@mixin screen-size-sm () {
+  @media (min-width: map-get($breakPoints, "sm")) {
+    @content;
+  }
+}
+@mixin screen-size-md () {
+  @media (min-width: map-get($breakPoints, "md")) {
+    @content;
+  }
+}
+@mixin screen-size-lg () {
+  @media (min-width: map-get($breakPoints, "lg")) {
+    @content;
+  }
+}
+@mixin screen-size-xl () {
+  @media (min-width: map-get($breakPoints, "xl")) {
+    @content;
+  }
+}
+@mixin screen-size-xxl () {
+  @media (min-width: map-get($breakPoints, "xxl")) {
+    @content;
+  }
+}
+

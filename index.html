@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | News homepage</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="./styles/css/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="Page-container">
+    
+    <nav class="navbar">
+      <div class="background-overlay"></div>
+      
+      <div class="navbar__logo">
+        <img src="./assets/images/logo.svg" alt="logo">
+      </div>
+      <img class="menu__icon-menu icon-menu" src="./assets/images/icon-menu.svg" alt="icon-menu">
+      
+      <section class="navbar__menu">
+        <div class="menu__icons-close">
+          <img class="menu__icon-menu-close icon-menu inactive" src="./assets/images/icon-menu-close.svg" alt="icon-menu-close">
+        </div>
+        <div class="menu__seccions">
+          <a class="menu__link-seccions" href="">Home</a>
+          <a class="menu__link-seccions" href="">New</a>
+          <a class="menu__link-seccions" href="">Popular</a>
+          <a class="menu__link-seccions" href="">Trending</a>
+          <a class="menu__link-seccions" href="">Categories</a>
+          <div class="attribution">
+            <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+              <br>
+              Coded by <a href="https://www.frontendmentor.io/profile/YhoshuaBernal">Yhoshua Bernal</a>
+            </p> 
+          </div>
+        </div>
+      </section>
+    </nav>
+  
+    <main class="main">
+      <section class="main__hero">
+        <div class="main__img-container">
+          <img src="./assets/images/image-web-3-mobile.jpg" alt="">
+        </div>
+  
+        <article class="main__first-info">
+          <div class="first-info__title">
+            <h1>The Bright Future of Web 3.0?</h1>
+          </div>
+          <div class="first-info__parragraph">
+            <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+              But is it really fulfilling its promise?</p>
+            <button class="first-info__button">READ MORE</button>
+          </div>
+        </article>
+      </section>
+  
+      <article class="main__articles">
+        <h2 class="articles__title">New</h2>
+        <div class="articles__new">
+          <h3 class="articles__new-title">Hydrogen VS Electric Cars</h3>
+          <p class="articles__new-parragraph">Will hydrogen-fueled cars ever catch up to EVs?</p>
+        </div>
+        <hr>
+        <div class="articles__new">
+          <h3 class="articles__new-title">The Downsides of AI Artistry</h3>
+          <p class="articles__new-parragraph">What are the possible adverse effects of on-demand AI image generation?</p>
+        </div>
+        <hr>
+        <div class="articles__new">
+          <h3 class="articles__new-title">Is VC Funding Drying Up?</h3>
+          <p class="articles__new-parragraph">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+        </div>
+      </article>
+  
+      <aside class="news-pages">
+        <div class="news-pages__card-page">
+          <div class="card-page__img">
+            <img src="./assets/images/image-retro-pcs.jpg" alt="card page img">
+          </div>
+          <div class="card-page__info">
+            <h3 class="card-page__title">01</h3>
+            <h4 class="card-page__subtitle">Reviving Retro PCs</h4>
+            <p class="card-page__parragraph">What happens when old PCs are given modern upgrades?</p>
+          </div>
+        </div>
+        
+        <div class="news-pages__card-page">
+          <div class="card-page__img">
+            <img src="./assets/images/image-top-laptops.jpg" alt="card page img">
+          </div>
+          <div class="card-page__info">
+            <h3 class="card-page__title">02</h3>
+            <h4 class="card-page__subtitle">Top 10 Laptops of 2022</h4>
+            <p class="card-page__parragraph">Our best picks for various needs and budgets.</p>
+          </div>
+        </div>
+  
+        <div class="news-pages__card-page">
+          <div class="card-page__img">
+            <img src="./assets/images/image-gaming-growth.jpg" alt="card page img">
+          </div>
+          <div class="card-page__info">
+            <h3 class="card-page__title">03</h3>
+            <h4 class="card-page__subtitle">The Growth of Gaming</h4>
+            <p class="card-page__parragraph">How the pandemic has sparked fresh opportunities.</p>
+          </div>
+        </div>
+      </aside>
+  
+    </main>
+  </div>
+
+
+  <script src="./JS/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+@use "../Settings/variables"  as *;
+@use "../Tools/mixins" as *;
+
+:root {
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  @include displayFlex();
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  font-weight: $medium-font;
+}
+
+
+hr {
+  width: 100%;
+  height: 1px;
+  background-color: $Dark-grayish-blue;
+  border: none;
+} 
+
+p {
+  line-height: 24px;
+  color: $Dark-grayish-blue;
+}
+
+a {
+  text-decoration: none;
+  color: $Very-dark-blue;
+}
+
