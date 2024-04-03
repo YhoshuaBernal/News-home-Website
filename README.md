@@ -16,8 +16,8 @@ This is a solution to the [News homepage challenge on Frontend Mentor](https://w
 
 <h2 align="center">Links</h2>
 
-- Solution URL: [News Homepage Using ITCSS with SCSS](https://www.frontendmentor.io/solutions/rest-countries-api-nextjs-and-server-actions-typescript-tailwind-n98Q5eaqNz)
-- Live Site URL: [Site](https://rest-countries-hdez.vercel.app/)
+- Solution URL: [News Homepage Using ITCSS with SCSS](https://www.frontendmentor.io/solutions/news-homepage-using-itcss-with-scss-pE_AW9T3e_)
+- Live Site URL: [Site](https://news-home-w.netlify.app/)
 
 <br>
 
