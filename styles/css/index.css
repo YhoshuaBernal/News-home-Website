@@ -21,8 +21,9 @@ body {
 hr {
   width: 100%;
   height: 1px;
-  background-color: hsl(236, 13%, 42%);
+  background-color: hsl(233, 8%, 79%);
   border: none;
+  margin: 12px 0;
 }
 
 p {
@@ -48,9 +49,9 @@ a {
   .main {
     grid-template-columns: repeat(3, 1fr);
     padding: 0 18px 18px 18px;
-    max-width: 1080px;
+    max-width: 1150px;
     box-sizing: border-box;
-    gap: 24px;
+    gap: 30px;
   }
 }
 .navbar {
@@ -77,8 +78,8 @@ a {
   position: fixed;
   right: 0;
   top: 0;
-  background-color: hsl(36, 100%, 99%);
   z-index: 9999;
+  background-color: hsl(36, 100%, 99%);
 }
 .navbar .menu__icon-menu {
   display: block;
@@ -107,19 +108,26 @@ a {
 
 @media (min-width: 768px) {
   .navbar {
-    margin-top: 30px;
+    margin: 60px 0 20px 0;
     padding-bottom: 0px;
+    padding: 18px;
     width: 100%;
     height: auto;
     display: flex;
     justify-content: space-between;
+  }
+  .navbar .navbar__logo {
+    width: 65px;
+  }
+  .navbar .navbar__logo img {
+    width: 100%;
   }
   .navbar .navbar__menu {
     width: auto;
     height: auto;
     position: relative;
     flex: 1 1 auto;
-    max-width: 400px;
+    max-width: 425px;
   }
   .navbar .icon-menu {
     display: none;
@@ -128,7 +136,7 @@ a {
     display: none;
   }
   .navbar .menu__seccions {
-    margin: 24px;
+    margin: 24px 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -136,6 +144,7 @@ a {
   }
   .navbar .menu__seccions .menu__link-seccions {
     font-size: 1rem;
+    color: hsl(236, 13%, 42%);
   }
 }
 .main__hero {
@@ -178,12 +187,44 @@ a {
   .main__hero {
     grid-column: 1/3;
   }
+  .main__hero .main__img-container {
+    width: 100%;
+    margin-bottom: 16px;
+  }
   .main__hero .main__first-info {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    gap: 18px;
-    justify-content: space-between;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
     box-sizing: border-box;
+  }
+  .main__hero .main__first-info .first-info__title h1 {
+    font-size: clamp(3rem, 6vw, 3.7rem);
+    font-weight: 800;
+    line-height: 3.7rem;
+    margin: 16px 0;
+  }
+  .main__hero .main__first-info .first-info__parragraph {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 24px;
+  }
+  .main__hero .main__first-info .first-info__parragraph p {
+    font-weight: 400;
+  }
+  .main__hero .main__first-info .first-info__parragraph .first-info__button {
+    padding: 18px 36px;
+    width: -moz-fit-content;
+    width: fit-content;
+    color: hsl(36, 100%, 99%);
+    border: transparent;
+    font-size: 0.9rem;
+    letter-spacing: 3px;
+    font-weight: 800;
+    background-color: hsl(5, 85%, 63%);
+  }
+  .main__hero .main__first-info .first-info__parragraph .first-info__button:hover {
+    background-color: hsl(240, 100%, 5%);
   }
   .main__hero .main__img-container {
     width: 100%;
@@ -197,23 +238,39 @@ a {
     display: none;
   }
 }
+@media (min-width: 992px) {
+  .main__hero .main__first-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+}
 .main__articles {
   display: flex;
   justify-content: center;
   align-items: start;
   flex-direction: column;
-  padding: 18px;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 24px;
   background-color: hsl(240, 100%, 5%);
   margin: 24px 0;
 }
 .main__articles .articles__title {
+  font-size: 2.7rem;
   color: hsl(35, 77%, 62%);
+  margin: 0px;
+  margin-bottom: 16px;
 }
 .main__articles .articles__new {
   width: 100%;
 }
 .main__articles .articles__new .articles__new-title {
+  font-size: 1.3rem;
   color: hsl(36, 100%, 99%);
+  margin: 15px 0;
 }
 .main__articles .articles__new .articles__new-title:hover {
   color: hsl(35, 77%, 62%);
@@ -231,6 +288,7 @@ a {
   display: grid;
   grid-template-columns: 1;
   gap: 28px;
+  margin: 16px 0;
 }
 .news-pages .news-pages__card-page {
   width: 100%;
@@ -284,7 +342,7 @@ a {
   }
   .news-pages .news-pages__card-page .card-page__info {
     display: flex;
-    padding: clamp(15px, 1.2vw, 30px) 0;
+    padding: clamp(5px, 0vw, 10px) 0;
   }
   .news-pages .news-pages__card-page .card-page__info .card-page__title {
     font-size: clamp(15px, 3vw, 30px);
